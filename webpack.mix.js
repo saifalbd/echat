@@ -18,3 +18,8 @@ const mix = require('laravel-mix');
 // ]);
 
 mix.sass('resources/css/chatApp.scss','public/css');
+
+
+mix.browserSync({
+    proxy:'http://127.0.0.1:8000'
+})
